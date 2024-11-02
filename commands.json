@@ -1,0 +1,8 @@
+{
+  "commands": [
+    "pip install -r requirements.txt",
+    "createdb openai_request_wrapper",
+    "psql -U postgres -d openai_request_wrapper -c \"CREATE EXTENSION IF NOT EXISTS pgcrypto\"",
+    "python main.py"
+  ]
+}
